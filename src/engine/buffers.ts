@@ -14,6 +14,7 @@ export function createCellBuffers(width: number, height: number): CellBuffers {
   };
 }
 
+
 /** Allocate a fresh environment (terrain + food) buffer set. */
 export function createEnvironmentBuffers(width: number, height: number): EnvironmentBuffers {
   const n = width * height;
