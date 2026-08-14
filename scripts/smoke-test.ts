@@ -4,6 +4,7 @@ import { createCellBuffers } from "../src/engine/buffers";
 import { stepSimulation } from "../src/engine/simulationRules";
 import { DEFAULT_SPECIES } from "../src/engine/constants";
 
+
 const W = 220;
 const H = 220;
 
