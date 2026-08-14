@@ -10,6 +10,7 @@ import { useSimulationStore } from "./store/simulationStore";
 import { fitViewport } from "./engine/viewportFit";
 import type { Viewport } from "./types";
 
+
 export default function App() {
   const {
     ready,
