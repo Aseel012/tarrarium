@@ -15,7 +15,7 @@ export function seedPopulation(
 
   let speciesCursor = 0;
   for (let i = 0; i < width * height; i++) {
-    if (env.terrain[i] === Terrain.Lava) continue; // don't spawn directly into lava
+    if (env.terrain[i] === Terrain.Lava) continue; 
     if (Math.random() >= density) continue;
 
     const s = enabled[speciesCursor % enabled.length];
