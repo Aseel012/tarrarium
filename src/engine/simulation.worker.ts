@@ -15,6 +15,7 @@
  * the same pair of buffers and only clone+transfer the *final* state back
  * — one memory copy per rendered frame, not per simulated generation.
  */
+
 import type { CellBuffers, EnvironmentBuffers, SpeciesConfig, WorkerRequest, WorkerResponse } from "../types";
 import { cloneCellBuffers, cellBufferList } from "./buffers";
 import { stepSimulation } from "./simulationRules";
