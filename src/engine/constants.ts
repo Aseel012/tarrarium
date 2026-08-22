@@ -3,7 +3,6 @@ import { Terrain, type SpeciesConfig } from "../types";
 /** Grid is divided into square chunks for dirty-rectangle rendering — see
  * spatialGrid.ts for how chunk indices are derived from cell coordinates. */
 export const CHUNK_SIZE = 16;
-
 /**
  * Four species with meaningfully different survival strategies, so the
  * ecosystem produces visible emergent dynamics rather than four cosmetic
