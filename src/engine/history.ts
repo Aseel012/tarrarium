@@ -30,7 +30,6 @@ export class HistoryManager {
       this.snapshots.shift();
     }
   }
-
   clear() {
     this.snapshots = [];
   }
