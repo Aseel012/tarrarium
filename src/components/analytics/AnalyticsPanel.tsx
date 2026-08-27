@@ -5,12 +5,9 @@ import Histogram from "./Histogram";
 import StatOverview from "./StatOverview";
 import { useSimulationStore } from "../../store/simulationStore";
 
-/** Rough resident memory footprint of the SoA buffers — 7 cell arrays + 2 env arrays. */
 function estimateBufferBytes(width: number, height: number): number {
   const n = width * height;
-  // alive(1) + speciesId(1) + energy(4) + age(2) + health(4) + dna(4) + mutationRate(4)
   const perCell = 1 + 1 + 4 + 2 + 4 + 4 + 4;
-  // terrain(1) + food(4)
   const perEnv = 1 + 4;
   return n * (perCell + perEnv);
 }
