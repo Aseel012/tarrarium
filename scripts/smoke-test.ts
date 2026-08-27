@@ -5,8 +5,8 @@ import { stepSimulation } from "../src/engine/simulationRules";
 import { DEFAULT_SPECIES } from "../src/engine/constants";
 
 
-const W = 220;
 const H = 220;
+const W = 220;
 
 const env = generateTerrain(W, H, 42);
 let current = seedPopulation(W, H, env, DEFAULT_SPECIES, 0.05);
