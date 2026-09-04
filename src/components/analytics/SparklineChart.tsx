@@ -11,12 +11,6 @@ interface SparklineChartProps {
   fill?: boolean;
 }
 
-/**
- * Minimal SVG sparkline/line-chart, built from scratch rather than pulling
- * in a charting library — the analytics panel only needs simple time
- * series, so a ~50-line component keeps the bundle small and the data
- * flow transparent.
- */
 export default function SparklineChart({ series, height = 64, maxOverride, fill = false }: SparklineChartProps) {
   const width = 280;
   const allValues = series.flatMap((s) => s.data);
