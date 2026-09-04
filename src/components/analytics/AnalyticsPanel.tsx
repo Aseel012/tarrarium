@@ -12,6 +12,7 @@ function estimateBufferBytes(width: number, height: number): number {
   return n * (perCell + perEnv);
 }
 
+
 export default function AnalyticsPanel() {
   const { stats, statsHistory, species, cells, width, height } = useSimulationStore((s) => ({
     stats: s.stats,
