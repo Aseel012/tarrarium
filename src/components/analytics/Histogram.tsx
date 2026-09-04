@@ -18,6 +18,7 @@ export default function Histogram({ values, min, max, bins = 12, color = "#5eead
     counts[bucket]++;
   });
 
+  
   const maxCount = Math.max(1, ...counts);
   const barWidth = width / bins;
 
