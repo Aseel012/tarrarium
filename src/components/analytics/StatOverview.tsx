@@ -1,7 +1,7 @@
 import { Panel } from "../layout/Panel";
 import { useSimulationStore } from "../../store/simulationStore";
 
-/** A tight label/value list for at-a-glance numbers — the "what's happening right now" strip. */
+
 export default function StatOverview() {
   const { stats, generation, width, height, species, isRunning, speed } = useSimulationStore((s) => ({
     stats: s.stats,
