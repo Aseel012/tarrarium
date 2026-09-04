@@ -2,7 +2,6 @@ import { Panel } from "../layout/Panel";
 import { Slider } from "../layout/Slider";
 import { useSimulationStore } from "../../store/simulationStore";
 
-/** Per-species enable/mutation/reproduction tuning, plus the active paint brush. */
 export default function SpeciesPanel() {
   const { species, updateSpecies, selectedBrushSpecies, setBrushSpecies } = useSimulationStore((s) => s);
 
